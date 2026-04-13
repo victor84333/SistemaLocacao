@@ -32,14 +32,14 @@ sql/
 ## ⚙️ Pré-requisitos
 
 - JDK 11+
-- XAMPP (MySQL rodando na porta 3306)
-- `mysql-connector-j-8.x.x.jar` no classpath
+- XAMPP iniciado com MySQL(Cria um ambiente de servidor web local no seu computador)
+- `mysql-connector-j-8.x.x.jar` no classpath do projeto (usado intellij)
 
 ---
 
 ## 🗄️ Configuração do Banco
 
-1. Inicie o XAMPP e suba o **MySQL**
+1. Inicie o XAMPP e ative o **MySQL**.
 2. Acesse `http://localhost/phpmyadmin`
 3. Clique em **"Nova"** ou **"Importar"** e execute o arquivo `sql/locadora.sql`
 4. O banco `locadora` será criado com as tabelas e dados de exemplo
@@ -53,7 +53,7 @@ sql/
 Faça download do `mysql-connector-j-8.x.x.jar` em:
 https://dev.mysql.com/downloads/connector/j/
 
-### 2. Compile (coloque o .jar na mesma pasta ou em lib/)
+### 2. Compile (coloque o .jar na mesma pasta ou em lib/) ou apenas execute no intelliJ
 
 ```bash
 # Windows
@@ -65,13 +65,13 @@ javac -cp ".:mysql-connector-j-8.x.x.jar" -d out -sourcepath src src/Main.java
 
 ### 3. Execute
 
-```bash
-# Windows
-java -cp ".;out;mysql-connector-j-8.x.x.jar" Main
+Para executar o projeto:
 
-# Linux/Mac
-java -cp ".:out:mysql-connector-j-8.x.x.jar" Main
-```
+1.Certifique-se de que o banco de dados esteja ativo no XAMPP
+2.Garanta que o driver MySQL Connector/J esteja corretamente adicionado ao projeto
+3.Execute a classe Main.java pela sua IDE, a parte gráfica será aberta automáticamente
+
+A aplicação será iniciada automaticamente com a interface gráfica.
 
 ---
 
@@ -100,7 +100,7 @@ java -cp ".:out:mysql-connector-j-8.x.x.jar" Main
 
 ---
 
-## 🔌 Conexão (util/Conexao.java)
+## 🔌 Conexão (Conexao.java)
 
 ```java
 URL:     jdbc:mysql://localhost:3306/locadora
