@@ -63,15 +63,15 @@ javac -cp ".;mysql-connector-j-8.x.x.jar" -d out -sourcepath src src/Main.java
 javac -cp ".:mysql-connector-j-8.x.x.jar" -d out -sourcepath src src/Main.java
 ```
 
-### 3. Execute
+### 3. Executar
 
 Para executar o projeto:
 
-1.Certifique-se de que o banco de dados esteja ativo no XAMPP
-2.Garanta que o driver MySQL Connector/J esteja corretamente adicionado ao projeto
-3.Execute a classe Main.java pela sua IDE, a parte gráfica será aberta automáticamente
+1. Certifique-se de que o banco de dados esteja ativo no XAMPP  
+2. Garanta que o driver MySQL Connector/J esteja corretamente adicionado ao projeto  
+3. Execute a classe `Main.java` pela sua IDE  
 
-A aplicação será iniciada automaticamente com a interface gráfica.
+A interface gráfica será aberta automaticamente ao iniciar a aplicação.a automaticamente com a interface gráfica.
 
 ---
 
