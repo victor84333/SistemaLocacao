@@ -71,8 +71,7 @@ Para executar o projeto:
 2. Garanta que o driver MySQL Connector/J esteja corretamente adicionado ao projeto  
 3. Execute a classe `Main.java` pela sua IDE  
 
-A interface gráfica será aberta automaticamente ao iniciar a aplicação.a automaticamente com a interface gráfica.
-
+A interface gráfica será aberta automaticamente ao iniciar a aplicação.
 ---
 
 ## 💰 Tabela de Preços por Categoria
